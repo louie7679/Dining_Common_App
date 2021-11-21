@@ -1,0 +1,110 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #d8d8d8;
+    background-repeat: no-repeat
+}
+
+.map {
+    position: relative;
+    width: 830px;
+    float: left;  
+}
+
+.back9d{
+    background-color: #9d9797;
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 6px;
+}
+
+.backc4 {
+    background-color: #c4c4c4;
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 6px;
+}
+
+.fixedfoodIcon {
+  width: 20px;
+}
+
+.foodIcon {
+    width: 20px;
+}
+
+.foodIcon:hover { 
+  width: 25px;
+  border: 2px solid black; 
+} 
+
+.userIcon {
+    width: 26px;
+}
+
+.marginleft20 {
+    margin-left: 20px;
+}
+
+/*red icons on the outdoor map*/
+.fi-wor {
+  position: absolute;
+  top: 220px;
+  left: 470px;
+}
+
+/*red icons on the wor indoor map*/
+.fi-wor-green {
+    position: absolute;
+    top: 400px;
+    left: 365px;
+  }
+
+
+/*Modals*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 30px; /* Location of the box */
+    left: 33%;
+    top: 0;
+    width: 33%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    border: #000;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/*Inside Modals*/
+
+.modalImage{
+    position: relative;
+    text-align: center;
+    width: 50%;
+}

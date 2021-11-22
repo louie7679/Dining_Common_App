@@ -16,3 +16,19 @@ fiworgreen.onclick = function() {
     }
   }
 
+// Filter
+var modalworfilter = document.getElementById("modal-wor-filter");
+var worfilter = document.getElementById("wor-filter");
+var span1 = document.getElementsByClassName("close")[1];
+worfilter.onclick = function() {
+    modalworfilter.style.display = "block";
+  }
+  span1.onclick = function() {
+    modalworfilter.style.display = "none";
+  }
+ window.onclick = function(event) {
+    if (event.target == modal) {
+        modalworfilter.style.display = "none";
+    }
+  }
+

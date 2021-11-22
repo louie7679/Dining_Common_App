@@ -36,7 +36,7 @@ body {
 
 .foodIcon:hover { 
   width: 25px;
-  border: 2px solid black; 
+  border: 2px solid red; 
 } 
 
 .userIcon {
@@ -104,7 +104,8 @@ body {
 /*Inside Modals*/
 
 .modalImage{
-    position: relative;
-    text-align: center;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }

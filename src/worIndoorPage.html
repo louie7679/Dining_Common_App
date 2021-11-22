@@ -24,19 +24,86 @@
 
       <img src="image/worMap.jpg" class="map">
 
+      <!-- Food Icons on the map -->
       <img id="fi-wor-green" class="fi-wor-green foodIcon" src="image/foodIcon.png" />
       <div id="modal-wor-green" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <h1 style="text-align: center">Green</h1>
-          <img src="image/worGreen.png" class="modalImage">
-          <div>Menu</div>
+          <!--span0-->
+          <h1 style="text-align: center">Green</h1><hr>
+          <img src="image/worGreen.png" class="modalImage"><hr>
+          <div>Artichoke Hearts<br>Cannellini Bean Salad w/Peppers & Zucchini<br>Cheddar Polenta<br>Italian Quinoa Salad<br>Italian White Beans<br>Kalamata Olives
+            </div>
         </div>
       </div>
 
       <div class="backc4" style="text-align: center">General Guidence to the dining hall</div><br>
       <div><img src="image/foodIcon.png" class="fixedfoodIcon marginleft20"> Food Position</div><br>
       <div><img src="image/userIcon.png" class="userIcon marginleft20"> User Position</div><br>
+      
+      <!--Filter-->
+      <a class="btn btn-light marginleft20" id="wor-filter" role="button">Filter</a>
+      <div id="modal-wor-filter" class="modal">
+        <div class="modal-content">
+          <!--span1-->
+          <span class="close">&times;</span><br>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Date</option>
+            <option value="1">Today</option>
+            <option value="2">Tomorrow</option>
+          </select><br>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Meal</option>
+            <option value="1">Breakfast</option>
+            <option value="2">Lunch</option>
+            <option value="3">Dinner</option>
+            <option value="4">Late Night</option>
+          </select><br><hr><br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Vegetarian
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Local
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Sustainable
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Whole Grain
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Halal
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Antibiotic Free
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Plant Based
+            </label>
+          </div>
+        </div>
+      </div>
+
     </body>
 
 </html>

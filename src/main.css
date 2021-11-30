@@ -61,6 +61,11 @@ body {
     left: 365px;
   }
 
+#fi-wor-tandoor {
+  position: absolute;
+  top: 360px;
+  left: 425px;
+}
 
 /*Modals*/
 /* The Modal (background) */

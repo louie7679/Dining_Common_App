@@ -16,14 +16,30 @@ fiworgreen.onclick = function() {
     }
   }
 
+// Wor food icon of tandoor
+var modalwortandoor = document.getElementById("modal-wor-tandoor");
+var fiwortandoor = document.getElementById("fi-wor-tandoor");
+var span1 = document.getElementsByClassName("close")[1];
+fiwortandoor.onclick = function() {
+    modalwortandoor.style.display = "block";
+  }
+  span1.onclick = function() {
+    modalwortandoor.style.display = "none";
+  }
+ window.onclick = function(event) {
+    if (event.target == modal) {
+        modalwortandoor.style.display = "none";
+    }
+  }
+
 // Filter
 var modalworfilter = document.getElementById("modal-wor-filter");
 var worfilter = document.getElementById("wor-filter");
-var span1 = document.getElementsByClassName("close")[1];
+var span2 = document.getElementsByClassName("close")[2];
 worfilter.onclick = function() {
     modalworfilter.style.display = "block";
   }
-  span1.onclick = function() {
+  span2.onclick = function() {
     modalworfilter.style.display = "none";
   }
  window.onclick = function(event) {

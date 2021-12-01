@@ -8,7 +8,7 @@ body {
 
 .map {
     position: relative;
-    width: 830px;
+    width: 64.7%;
     float: left;  
 }
 
@@ -55,16 +55,40 @@ body {
 }
 
 /*red icons on the wor indoor map*/
-.fi-wor-green {
+#fi-wor-seasons {
     position: absolute;
-    top: 400px;
-    left: 365px;
+    top: 260px;
+    left: 460px;
   }
 
 #fi-wor-tandoor {
   position: absolute;
   top: 360px;
   left: 425px;
+}
+
+#fi-wor-pizza {
+  position: absolute;
+  top: 260px;
+  left: 365px;
+}
+
+#fi-wor-desserts {
+  position: absolute;
+  top: 270px;
+  left: 190px;
+}
+
+#fi-wor-street {
+  position: absolute;
+  top: 260px;
+  left: 610px;
+}
+
+#fi-wor-noodle {
+  position: absolute;
+  top: 330px;
+  left: 650px;
 }
 
 /*Modals*/
@@ -74,12 +98,14 @@ body {
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 30px; /* Location of the box */
-    left: 33%;
+    left: 33.3%;
     top: 0;
-    width: 33%; /* Full width */
+    width: 33.3%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     border: #000;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
   /* Modal Content */
@@ -112,5 +138,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 250px;
 }
+

@@ -160,19 +160,22 @@ fiwormedi.onclick = function() {
       }
     }
 
-// Filter
-// var modalworfilter = document.getElementById("modal-wor-filter");
-// var worfilter = document.getElementById("wor-filter");
-// var span6 = document.getElementsByClassName("close")[6];
-// worfilter.onclick = function() {
-//     modalworfilter.style.display = "block";
-//  }
-//   span6.onclick = function() {
-//     modalworfilter.style.display = "none";
-//   }
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modalworfilter.style.display = "none";
-//     }
-//   }
+//Filter
+var modalworfilter = document.getElementById("modal-wor-filter");
+var worfilter = document.getElementById("wor-filter");
+worfilter.onclick = function() {
+    modalworfilter.style.display = "block";
+ }
+  document.getElementById("filterapply").onclick = function() {
+    modalworfilter.style.display = "none";
+    if (document.getElementById("wor-date").value === "2" && document.getElementById("wor-meal").value === "lunch") {
+      document.getElementById("wor-menu-soup").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+    }
+  }
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modalworfilter.style.display = "none";
+    }
+  }
+
 

@@ -36,7 +36,7 @@ body {
 
 .foodIcon:hover { 
   width: 25px;
-  border: 2px solid red; 
+  border: 2px solid grey; 
 } 
 
 .userIcon {
@@ -47,11 +47,14 @@ body {
     margin-left: 20px;
 }
 
+
+  
+
 /*red icons on the outdoor map*/
 .fi-wor {
   position: absolute;
   top: 32%;
-  left: 36.5%;
+  left: 36.9%;
 }
 
 /*red icons on the wor indoor map*/
@@ -61,6 +64,18 @@ body {
     left: 36%;
   }
 
+#wrapper-seasons .card-wor-seasons {
+  position:absolute;
+  top:18%;
+  left:39%;
+  visibility:hidden;
+  z-index: 1000;
+  }
+  
+  #wrapper-seasons:hover .card-wor-seasons {
+  visibility:visible;
+  }
+  
 #fi-wor-tandoor {
   position: absolute;
   top: 52%;

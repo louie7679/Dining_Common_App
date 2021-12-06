@@ -25,14 +25,22 @@
       <img src="image/worMap.jpg" class="map">
 
       <!-- Food Icons on the map -->
-      <img id="fi-wor-seasons" class="foodIcon" src="image/foodIcon.png" />
+      <div id="wrapper-seasons">
+      <img id="fi-wor-seasons" class="foodIcon hover" src="image/foodIcon.png" />
+      <div class="card card-wor-seasons text-white bg-secondary mb-3" style="width: 15%;">
+        <img class="card-img-top" src="image/worStreetfood.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Seasons</p>
+        </div>
+      </div>
+      </div>
       <div id="modal-wor-seasons" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <!--span0-->
           <h1 style="text-align: center">Seasons</h1><hr>
           <img src="image/worGreen.png" class="modalImage"><hr>
-          <div>Artichoke Hearts<br>Cannellini Bean Salad w/Peppers & Zucchini<br>Cheddar Polenta<br>Italian Quinoa Salad<br>Italian White Beans<br>Kalamata Olives
+          <div id="wor-menu-seasons">Bean Sprouts<br>Cucumbers, Cubed<br>Miso Glazed Sweet Potato w/Sesame<br>Pumpkin Seeds/Pepitas<br>Scallions<br>Sesame Chili Vinaigrette<br>Sesame Seeds<br>Spicy Miso Eggplant Broccoli Salad<br>Spinach & Garlic<br>Spring Mix<br>Tofu Teriyaki<br>Vegetable Fried Rice
             </div>
         </div>
       </div>
@@ -45,7 +53,7 @@
           <!--span1-->
           <h1 style="text-align: center">Tandoor</h1><hr>
           <img src="image/worGreen.png" class="modalImage"><hr>
-          <div>Citrus Saffron Basmati Rice<br>Cranberry Tamarind Chutney<br>Green Beans, Tadka & Rstd Coconut<br>Green Chili Chutney<br>Kachumber Salad<br>Naan Bread<br>Potatoes & Green Pea Curry<br>Street Corn Salad<br>Tandoori Salmon<br>Turmeric Basmati Rice
+          <div id="wor-menu-tandoor">Creamy Cucumber Salad<br>Green Tahini Sauce<br>Harissa Braised Zucchini<br>Hummus<br>Lavash Bread<br>Lemon Rice Pilaf<br>Mid East Tomato Salad<br>Moroccan Kefta Brochette (Beef)<br>Sweet Onion Salad
             </div>
         </div>
       </div>
@@ -58,7 +66,7 @@
           <!--span2-->
           <h1 style="text-align: center">Pizza</h1><hr>
           <img src="image/worGreen.png" class="modalImage"><hr>
-          <div>Cheese Pizza<br> Pepperoni Pizza
+          <div id="wor-menu-pizza">Cheese Pizza<br> Pepperoni Pizza
             </div>
         </div>
       </div>
@@ -71,7 +79,7 @@
           <!--span3-->
           <h1 style="text-align: center">Desserts</h1><hr>
           <img src="image/worGreen.png" class="modalImage"><hr>
-          <div>Macaroon Cookies<br>Yellow Cake w/Chocolate Icing
+          <div id="wor-menu-desserts">Rice Krispy Treats<br>Triple Chocolate Cookie
             </div>
         </div>
       </div>
@@ -84,7 +92,7 @@
           <!--span4-->
           <h1 style="text-align: center">Street Food</h1><hr>
           <img src="image/worStreetfood.jpg" class="modalImage"><hr>
-          <div>Kung Pao Peanut Chicken<br>Stir Fried Vegetables<br>Tofu w/Garlic Sauce<br>Vegetable Fried Rice<br>Vegetable Spring Rolls
+          <div id="wor-menu-street">Kimchi Fried Rice<br>Korean BBQ Tofu<br>Korean Gochujang BBQ Ribs<br>Stir Fried Vegetables<br>Vegetable Spring Rolls
             </div>
         </div>
       </div>
@@ -97,7 +105,7 @@
           <!--span5-->
           <h1 style="text-align: center">Noodle Bowl</h1><hr>
           <img src="image/worStreetfood.jpg" class="modalImage"><hr>
-          <div>Vietnamese Beef Pho Noodle Bowl<br>Vietnamese Chicken Pho Noodle Bowl<br>Vietnamese Veg Pho Noodle Bowl
+          <div id="wor-menu-noodle">Hot and Sour Soup<br>Jiaozi Pork Dumpling
             </div>
         </div>
       </div>
@@ -110,7 +118,7 @@
           <!--span6-->
           <h1 style="text-align: center">Grill Station</h1><hr>
           <img src="image/worStreetfood.jpg" class="modalImage"><hr>
-          <div>Black Bean Burger<br>French Fries<br>Grass Fed Beef Burger<br>Grilled Chicken Breast<br>Jerk Chicken Thigh<br>Roasted Onions & Peppers<br>Sauteed Broccoli<br>Sweet Potato Fries
+          <div id="wor-menu-grill">Black Bean Burger<br>French Fries<br>Grass Fed Beef Burger<br>Grilled Chicken Breast<br>Jerk Chicken Thigh<br>Roasted Onions & Peppers<br>Sauteed Broccoli<br>Sweet Potato Fries
             </div>
         </div>
       </div>
@@ -123,7 +131,7 @@
           <!--span7-->
           <h1 style="text-align: center">Latino 2 WOR</h1><hr>
           <img src="image/worStreetfood.jpg" class="modalImage"><hr>
-          <div>6" Flour Tortilla<br>Black Beans<br>Chicken Fajitas<br>Chili Lime Melon Salad<br>Mexican Quinoa & Black Bean Salad<br>Mexican Toppings<br>Yellow Rice<br>Zucchini & Corn
+          <div id="wor-menu-latino">6" Flour Tortilla<br>Black Beans<br>Chicken Fajitas<br>Chili Lime Melon Salad<br>Mexican Quinoa & Black Bean Salad<br>Mexican Toppings<br>Yellow Rice<br>Zucchini & Corn
             </div>
         </div>
       </div>
@@ -136,7 +144,7 @@
           <!--span8-->
           <h1 style="text-align: center">Mediterranean</h1><hr>
           <img src="image/worStreetfood.jpg" class="modalImage"><hr>
-          <div>Braised Pork w/White Beans & Tomatoes<br>Fettuccini Pasta<br>Marinara Sauce<br>Mushroom Cream Sauce<br>Rstd Cauliflower, Salsa Verde & Olives<br>Tortellini w/Basil Pesto & Grape Tomatoes<br>Whole Grain Penne
+          <div id="wor-menu-medi">Braised Pork w/White Beans & Tomatoes<br>Fettuccini Pasta<br>Marinara Sauce<br>Mushroom Cream Sauce<br>Rstd Cauliflower, Salsa Verde & Olives<br>Tortellini w/Basil Pesto & Grape Tomatoes<br>Whole Grain Penne
             </div>
         </div>
       </div>
@@ -149,7 +157,7 @@
           <!--span8-->
           <h1 style="text-align: center">Soup</h1><hr>
           <img src="image/worStreetfood.jpg" class="modalImage"><hr>
-          <div>Chicken Noodle Soup<br>Tomato Bisque Soup
+          <div id="wor-menu-soup">Chicken Noodle Soup<br>Tomato Bisque Soup
             </div>
         </div>
       </div>
@@ -160,20 +168,15 @@
       <!--Filter-->
       <a class="btn btn-light marginleft20" id="wor-filter" role="button">Filter</a>
       <div id="modal-wor-filter" class="modal">
-        <div class="modal-content">
-          <!--span3-->
-          <span class="close">&times;</span><br>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Select Date</option>
-            <option value="1">Today</option>
-            <option value="2">Tomorrow</option>
+        <div class="modal-content"><br>
+          <select class="form-select" aria-label="Default select example" id="wor-date">
+            <option value="1">Tue December 07, 2021</option>
+            <option value="2">Wed December 08, 2021</option>
           </select><br>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Select Meal</option>
-            <option value="1">Breakfast</option>
-            <option value="2">Lunch</option>
-            <option value="3">Dinner</option>
-            <option value="4">Late Night</option>
+          <select class="form-select" aria-label="Default select example" id="wor-meal">
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="late night">Late Night</option>
           </select><br><hr><br>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -216,7 +219,8 @@
             <label class="form-check-label" for="flexCheckDefault">
               Plant Based
             </label>
-          </div>
+          </div><br><hr><br>
+          <a class="btn btn-outline-dark" id="filterapply">Apply</a>
         </div>
       </div>
 

@@ -50,45 +50,69 @@ body {
 /*red icons on the outdoor map*/
 .fi-wor {
   position: absolute;
-  top: 220px;
-  left: 470px;
+  top: 32%;
+  left: 36.5%;
 }
 
 /*red icons on the wor indoor map*/
 #fi-wor-seasons {
     position: absolute;
-    top: 260px;
-    left: 460px;
+    top: 38%;
+    left: 36%;
   }
 
 #fi-wor-tandoor {
   position: absolute;
-  top: 360px;
-  left: 425px;
+  top: 52%;
+  left: 33%;
 }
 
 #fi-wor-pizza {
   position: absolute;
-  top: 260px;
-  left: 365px;
+  top: 38%;
+  left: 31%;
 }
 
 #fi-wor-desserts {
   position: absolute;
-  top: 270px;
-  left: 190px;
+  top: 39%;
+  left: 21%;
 }
 
 #fi-wor-street {
   position: absolute;
-  top: 260px;
-  left: 610px;
+  top: 38%;
+  left: 48%;
 }
 
 #fi-wor-noodle {
   position: absolute;
-  top: 330px;
-  left: 650px;
+  top: 46%;
+  left: 53%;
+}
+
+#fi-wor-grill {
+  position: absolute;
+  top: 52%;
+  left: 24%;
+}
+
+#fi-wor-latino {
+  position: absolute;
+  top: 48%;
+  left: 14%;
+}
+
+#fi-wor-medi {
+  position: absolute;
+  top: 38%;
+  left: 26%;
+}
+
+#fi-wor-soup {
+  position: absolute;
+  top: 57%;
+  left: 30%;
 }
 
 /*Modals*/
@@ -138,6 +162,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 250px;
+  width: 75%;
 }
 

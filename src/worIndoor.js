@@ -96,19 +96,83 @@ fiwornoodle.onclick = function() {
     }
   }
 
-// Filter
-var modalworfilter = document.getElementById("modal-wor-filter");
-var worfilter = document.getElementById("wor-filter");
+    // Wor food icon of grill station
+var modalworgrill = document.getElementById("modal-wor-grill");
+var fiworgrill = document.getElementById("fi-wor-grill");
 var span6 = document.getElementsByClassName("close")[6];
-worfilter.onclick = function() {
-    modalworfilter.style.display = "block";
- }
-  span6.onclick = function() {
-    modalworfilter.style.display = "none";
+fiworgrill.onclick = function() {
+    modalworgrill.style.display = "block";
   }
-window.onclick = function(event) {
+  span6.onclick = function() {
+    modalworgrill.style.display = "none";
+  }
+ window.onclick = function(event) {
     if (event.target == modal) {
-        modalworfilter.style.display = "none";
+        modalworgrill.style.display = "none";
     }
   }
+
+    // Wor food icon of latino
+var modalworlatino = document.getElementById("modal-wor-latino");
+var fiworlatino = document.getElementById("fi-wor-latino");
+var span7 = document.getElementsByClassName("close")[7];
+fiworlatino.onclick = function() {
+    modalworlatino.style.display = "block";
+  }
+  span7.onclick = function() {
+    modalworlatino.style.display = "none";
+  }
+ window.onclick = function(event) {
+    if (event.target == modal) {
+        modalworlatino.style.display = "none";
+    }
+  }
+
+  // Wor food icon of medi
+var modalwormedi = document.getElementById("modal-wor-medi");
+var fiwormedi = document.getElementById("fi-wor-medi");
+var span8 = document.getElementsByClassName("close")[8];
+fiwormedi.onclick = function() {
+    modalwormedi.style.display = "block";
+  }
+  span8.onclick = function() {
+    modalwormedi.style.display = "none";
+  }
+ window.onclick = function(event) {
+    if (event.target == modal) {
+        modalwormedi.style.display = "none";
+    }
+  }
+
+  // Wor food icon of soup
+  var modalworsoup = document.getElementById("modal-wor-soup");
+  var fiworsoup = document.getElementById("fi-wor-soup");
+  var span9 = document.getElementsByClassName("close")[9];
+  fiworsoup.onclick = function() {
+      modalworsoup.style.display = "block";
+    }
+    span9.onclick = function() {
+      modalworsoup.style.display = "none";
+    }
+   window.onclick = function(event) {
+      if (event.target == modal) {
+          modalworsoup.style.display = "none";
+      }
+    }
+
+// Filter
+// var modalworfilter = document.getElementById("modal-wor-filter");
+// var worfilter = document.getElementById("wor-filter");
+// var span6 = document.getElementsByClassName("close")[6];
+// worfilter.onclick = function() {
+//     modalworfilter.style.display = "block";
+//  }
+//   span6.onclick = function() {
+//     modalworfilter.style.display = "none";
+//   }
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modalworfilter.style.display = "none";
+//     }
+//   }
 

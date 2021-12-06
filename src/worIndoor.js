@@ -168,8 +168,79 @@ worfilter.onclick = function() {
  }
   document.getElementById("filterapply").onclick = function() {
     modalworfilter.style.display = "none";
-    if (document.getElementById("wor-date").value === "2" && document.getElementById("wor-meal").value === "lunch") {
+    if (document.getElementById("wor-date").value === "1" && document.getElementById("wor-meal").value === "lunch"){
+      if (document.getElementById(vegeCheck).checked = true) {
+        document.getElementById("wor-menu-soup").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+        document.getElementById("wor-menu-grill").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+        document.getElementById("wor-menu-desserts").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+        document.getElementById("wor-menu-noodle").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+        document.getElementById("wor-menu-pizza").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+        document.getElementById("wor-menu-street").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+        document.getElementById("wor-menu-tandoor").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+        document.getElementById("wor-menu-medi").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+        document.getElementById("wor-menu-seasons").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+        document.getElementById("wor-menu-latino").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      }
+    }
+    else if (document.getElementById("wor-date").value === "2" && document.getElementById("wor-meal").value === "lunch") {
       document.getElementById("wor-menu-soup").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-grill").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-desserts").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-noodle").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-pizza").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-street").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-tandoor").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-medi").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-seasons").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-latino").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+    }
+    else if (document.getElementById("wor-date").value === "2" && document.getElementById("wor-meal").value === "dinner") {
+      document.getElementById("wor-menu-soup").innerHTML = "Tantanmen Ramen Bar";
+      document.getElementById("wor-menu-grill").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-desserts").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-noodle").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-pizza").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-street").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-tandoor").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-medi").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-seasons").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-latino").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+    }
+    else if (document.getElementById("wor-date").value === "2" && document.getElementById("wor-meal").value === "late") {
+      document.getElementById("wor-menu-soup").innerHTML = "Tantanmen Ramen Bar";
+      document.getElementById("wor-menu-grill").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-desserts").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-noodle").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-pizza").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-street").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-tandoor").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-medi").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-seasons").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-latino").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+    }
+    else if (document.getElementById("wor-date").value === "1" && document.getElementById("wor-meal").value === "dinner") {
+      document.getElementById("wor-menu-soup").innerHTML = "Tantanmen Ramen Bar";
+      document.getElementById("wor-menu-grill").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-desserts").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-noodle").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-pizza").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-street").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-tandoor").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-medi").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-seasons").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-latino").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+    }
+    else if (document.getElementById("wor-date").value === "1" && document.getElementById("wor-meal").value === "late") {
+      document.getElementById("wor-menu-soup").innerHTML = "Tantanmen Ramen Bar";
+      document.getElementById("wor-menu-grill").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-desserts").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-noodle").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-pizza").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-street").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-tandoor").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-medi").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-seasons").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-latino").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
     }
   }
 window.onclick = function(event) {

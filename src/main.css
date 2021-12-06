@@ -57,6 +57,18 @@ body {
   left: 36.9%;
 }
 
+#wrapper-wor .card-wor {
+  position:absolute;
+  top:12%;
+  left:39.9%;
+  visibility:hidden;
+  z-index: 1000;
+  }
+  
+  #wrapper-wor:hover .card-wor {
+  visibility:visible;
+  }
+
 /*red icons on the wor indoor map*/
 #fi-wor-seasons {
     position: absolute;
@@ -101,11 +113,35 @@ body {
   left: 31%;
 }
 
+#wrapper-pizza .card-wor-pizza {
+  position:absolute;
+  top:18%;
+  left:34%;
+  visibility:hidden;
+  z-index: 1000;
+  }
+  
+  #wrapper-pizza:hover .card-wor-pizza {
+  visibility:visible;
+  }
+
 #fi-wor-desserts {
   position: absolute;
   top: 39%;
   left: 21%;
 }
+
+#wrapper-desserts .card-wor-desserts {
+  position:absolute;
+  top:19%;
+  left:24%;
+  visibility:hidden;
+  z-index: 1000;
+  }
+  
+  #wrapper-desserts:hover .card-wor-desserts {
+  visibility:visible;
+  }
 
 #fi-wor-street {
   position: absolute;
@@ -113,17 +149,54 @@ body {
   left: 48%;
 }
 
+#wrapper-street .card-wor-street {
+  position:absolute;
+  top:18%;
+  left:51%;
+  visibility:hidden;
+  z-index: 1000;
+  }
+  
+  #wrapper-street:hover .card-wor-street {
+  visibility:visible;
+  }
+
 #fi-wor-noodle {
   position: absolute;
   top: 46%;
   left: 53%;
 }
 
+#wrapper-noodle .card-wor-noodle {
+  position:absolute;
+  top:26%;
+  left:56%;
+  visibility:hidden;
+  z-index: 1000;
+  }
+  
+  #wrapper-noodle:hover .card-wor-noodle {
+  visibility:visible;
+  }
+
+
 #fi-wor-grill {
   position: absolute;
   top: 52%;
   left: 24%;
 }
+
+#wrapper-grill .card-wor-grill {
+  position:absolute;
+  top:32%;
+  left:27%;
+  visibility:hidden;
+  z-index: 1000;
+  }
+  
+  #wrapper-grill:hover .card-wor-grill {
+  visibility:visible;
+  }
 
 #fi-wor-latino {
   position: absolute;
@@ -149,11 +222,35 @@ body {
   left: 26%;
 }
 
+#wrapper-medi .card-wor-medi {
+  position:absolute;
+  top:18%;
+  left:29%;
+  visibility:hidden;
+  z-index: 1000;
+  }
+  
+  #wrapper-medi:hover .card-wor-medi {
+  visibility:visible;
+  }
+
 #fi-wor-soup {
   position: absolute;
   top: 57%;
   left: 30%;
 }
+
+#wrapper-soup .card-wor-soup {
+  position:absolute;
+  top:37%;
+  left:33%;
+  visibility:hidden;
+  z-index: 1000;
+  }
+  
+  #wrapper-soup:hover .card-wor-soup {
+  visibility:visible;
+  }
 
 /*Modals*/
 /* The Modal (background) */

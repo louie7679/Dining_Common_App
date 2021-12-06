@@ -47,7 +47,11 @@ body {
     margin-left: 20px;
 }
 
-
+#user-temp{
+  position: absolute;
+  top: 46%;
+  left: 33.5%;
+}
   
 
 /*red icons on the outdoor map*/

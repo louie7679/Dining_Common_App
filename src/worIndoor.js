@@ -184,15 +184,15 @@ worfilter.onclick = function() {
     }
     else if (document.getElementById("wor-date").value === "2" && document.getElementById("wor-meal").value === "lunch") {
       document.getElementById("wor-menu-soup").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
-      document.getElementById("wor-menu-grill").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
-      document.getElementById("wor-menu-desserts").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
-      document.getElementById("wor-menu-noodle").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
-      document.getElementById("wor-menu-pizza").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
-      document.getElementById("wor-menu-street").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
-      document.getElementById("wor-menu-tandoor").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
-      document.getElementById("wor-menu-medi").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
-      document.getElementById("wor-menu-seasons").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
-      document.getElementById("wor-menu-latino").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
+      document.getElementById("wor-menu-grill").innerHTML = "Black Bean Burger<br>French Fries<br>Grass Fed Beef Burger<br>Grilled Chicken Breast<br>Lemon Pepper Chicken Thigh<br>Roasted Cauliflower<br>Roasted Zucchini<br>Sweet Potato Fries";
+      document.getElementById("wor-menu-desserts").innerHTML = "Snickerdoodle Cookies<br>Zebra Brownies";
+      document.getElementById("wor-menu-noodle").innerHTML = "Beef Brisket Noodle Bowl";
+      document.getElementById("wor-menu-pizza").innerHTML = "Cheese Pizza<br>Pepperoni Pizza";
+      document.getElementById("wor-menu-street").innerHTML = "Egg & Tomato Stir Fry<br>San Bei Ji<br>Stir Fried Vegetables<br>Vegetable Lo Mein<br>Vegetable Spring Rolls";
+      document.getElementById("wor-menu-tandoor").innerHTML = "African Peri Peri Chicken<br>Chickpea Salad w/Teardrop Peppers & Artichoke Hearts<br>Creamy Cucumber Salad<br>Ethiopian Collard Greens<br>Jollof (West African Tomato Rice)<br>Lavash Bread<br>Sweet Onion Salad";
+      document.getElementById("wor-menu-medi").innerHTML = "Cauliflower w/Peppers, Almonds & Chives<br>Garlic Parmesan Cream Sauce<br>Marinara Sauce<br>Roasted Halibut w/Tomatoes & Leeks<br>Spaghetti<br>Tortellini w/Red Pepper Pesto & Artichoke<br>Whole Grain Penne";
+      document.getElementById("wor-menu-seasons").innerHTML = "Bean Sprouts<br>Cucumbers, Cubed<br>Roasted Sesame Broccoli<br>Scallions<br>Sesame Chili Vinaigrette<br>Sesame Seeds<br>Spicy Miso Eggplant Broccoli Salad<br>Spring Mix<br>Sunflower Seeds<br>Tofu Teriyaki<br>Vegetable Fried Rice";
+      document.getElementById("wor-menu-latino").innerHTML = "Corn & Black Bean Salad<br>Mango & Watermelon Salad<br>Mexican Tomato Salad<br>Mexican Toppings<br>Pinto Beans<br>Pork Pupusas Con Curtido<br>Salvadoran Salsa Roja (Chicken)<br>Yellow Rice";
     }
     else if (document.getElementById("wor-date").value === "2" && document.getElementById("wor-meal").value === "dinner") {
       document.getElementById("wor-menu-soup").innerHTML = "Tantanmen Ramen Bar";

@@ -75,12 +75,25 @@ body {
   #wrapper-seasons:hover .card-wor-seasons {
   visibility:visible;
   }
-  
+
 #fi-wor-tandoor {
   position: absolute;
   top: 52%;
   left: 33%;
 }
+
+#wrapper-tandoor .card-wor-tandoor {
+  position:absolute;
+  top:32%;
+  left:36%;
+  visibility:hidden;
+  z-index: 1000;
+  }
+  
+  #wrapper-tandoor:hover .card-wor-tandoor {
+  visibility:visible;
+  }
+  
 
 #fi-wor-pizza {
   position: absolute;
@@ -117,6 +130,18 @@ body {
   top: 48%;
   left: 14%;
 }
+
+#wrapper-latino .card-wor-latino {
+  position:absolute;
+  top:28%;
+  left:17%;
+  visibility:hidden;
+  z-index: 1000;
+  }
+  
+  #wrapper-latino:hover .card-wor-latino {
+  visibility:visible;
+  }
 
 #fi-wor-medi {
   position: absolute;

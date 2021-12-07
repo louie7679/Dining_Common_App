@@ -254,9 +254,43 @@ worfilter.onclick = function() {
     }
   }
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modalworfilter.style.display = "none";
+    //this causes errors, modal is not defined...
+    //if (event.target == modal) {
+    //    modalworfilter.style.display = "none";
+    //}
+  }
+
+//search functionality
+var search = document.getElementById("search-span");
+var searchField = document.getElementById("search-text");
+addSearchOptions();
+
+function addSearchOptions(){
+  var stations = document.getElementsByClassName("menu-name");
+  for (const e of stations) {
+    let option = document.createElement("a");
+    option.innerText = e.innerText;
+    option.style.display = "none";
+    search.appendChild(option);
+  }
+}
+
+search.addEventListener("keyup", () => {
+  let options = search.children;
+  for (const op of options) {
+    if(op.id === "search-text" || op.tagName === "BUTTON"){
+      continue;
+    }
+
+    let searchText = searchField.value.toLowerCase();
+    let optionText = op.innerText.toLowerCase();
+    if(!optionText.includes(searchText)){
+      op.style.display = "none";
+    }
+    else{
+      op.style.display = "";
     }
   }
+});
 
 

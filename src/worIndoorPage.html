@@ -13,8 +13,10 @@
       <div class="back9d">
         <a class="btn btn-light marginleft20" href="outdoorPage.html" role="button">Campus Map</a>
         <a class="btn btn-light marginleft20" href="" role="button">Menu Browser</a>
-        <input type="text" style="margin-left: 54%"/>
-        <button class="btn btn-light" style="margin-left: 10px">Search</button>
+        <span id="search-span" class="search-content">
+          <input type="text" placeholder="start typing..." id="search-text" style="margin-left: 54%;"/>
+          <button class="btn btn-light" style="margin-left: 10px">Search</button>
+        </span>
       </div>
 
       <div class="backc4">
@@ -38,9 +40,9 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <!--span0-->
-          <h1 style="text-align: center">Seasons</h1><hr>
+          <h1 class="menu-name" style="text-align: center">Seasons</h1><hr>
           <img src="image/worSeasons.jpg" class="modalImage"><hr>
-          <div id="wor-menu-seasons">Bean Sprouts<br>Cucumbers, Cubed<br>Miso Glazed Sweet Potato w/Sesame<br>Pumpkin Seeds/Pepitas<br>Scallions<br>Sesame Chili Vinaigrette<br>Sesame Seeds<br>Spicy Miso Eggplant Broccoli Salad<br>Spinach & Garlic<br>Spring Mix<br>Tofu Teriyaki<br>Vegetable Fried Rice
+          <div class="menu-content" id="wor-menu-seasons">Bean Sprouts<br>Cucumbers, Cubed<br>Miso Glazed Sweet Potato w/Sesame<br>Pumpkin Seeds/Pepitas<br>Scallions<br>Sesame Chili Vinaigrette<br>Sesame Seeds<br>Spicy Miso Eggplant Broccoli Salad<br>Spinach & Garlic<br>Spring Mix<br>Tofu Teriyaki<br>Vegetable Fried Rice
             </div>
         </div>
       </div>
@@ -59,9 +61,9 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <!--span1-->
-          <h1 style="text-align: center">Tandoor</h1><hr>
+          <h1 class="menu-name" style="text-align: center">Tandoor</h1><hr>
           <img src="image/worTandoor.jpg" class="modalImage"><hr>
-          <div id="wor-menu-tandoor">Creamy Cucumber Salad<br>Green Tahini Sauce<br>Harissa Braised Zucchini<br>Hummus<br>Lavash Bread<br>Lemon Rice Pilaf<br>Mid East Tomato Salad<br>Moroccan Kefta Brochette (Beef)<br>Sweet Onion Salad
+          <div class="menu-content" id="wor-menu-tandoor">Creamy Cucumber Salad<br>Green Tahini Sauce<br>Harissa Braised Zucchini<br>Hummus<br>Lavash Bread<br>Lemon Rice Pilaf<br>Mid East Tomato Salad<br>Moroccan Kefta Brochette (Beef)<br>Sweet Onion Salad
             </div>
         </div>
       </div>
@@ -80,7 +82,7 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <!--span2-->
-          <h1 style="text-align: center">Pizza</h1><hr>
+          <h1 class="menu-name" style="text-align: center">Pizza</h1><hr>
           <img src="image/worPizza.jpg" class="modalImage"><hr>
           <div id="wor-menu-pizza">Cheese Pizza<br> Pepperoni Pizza
             </div>
@@ -101,7 +103,7 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <!--span3-->
-          <h1 style="text-align: center">Desserts</h1><hr>
+          <h1 class="menu-name" style="text-align: center">Desserts</h1><hr>
           <img src="image/worDesserts.jpg" class="modalImage"><hr>
           <div id="wor-menu-desserts">Rice Krispy Treats<br>Triple Chocolate Cookie
             </div>
@@ -122,7 +124,7 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <!--span4-->
-          <h1 style="text-align: center">Street Food</h1><hr>
+          <h1 class="menu-name" style="text-align: center">Street Food</h1><hr>
           <img src="image/worStreetfood.jpg" class="modalImage"><hr>
           <div id="wor-menu-street">Kimchi Fried Rice<br>Korean BBQ Tofu<br>Korean Gochujang BBQ Ribs<br>Stir Fried Vegetables<br>Vegetable Spring Rolls
             </div>
@@ -143,7 +145,7 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <!--span5-->
-          <h1 style="text-align: center">Noodle Bowl</h1><hr>
+          <h1 class="menu-name" style="text-align: center">Noodle Bowl</h1><hr>
           <img src="image/worNoodle.jpg" class="modalImage"><hr>
           <div id="wor-menu-noodle">Hot and Sour Soup<br>Jiaozi Pork Dumpling
             </div>
@@ -164,7 +166,7 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <!--span6-->
-          <h1 style="text-align: center">Grill Station</h1><hr>
+          <h1 class="menu-name" style="text-align: center">Grill Station</h1><hr>
           <img src="image/worGrill.jpg" class="modalImage"><hr>
           <div id="wor-menu-grill">Black Bean Burger<br>French Fries<br>Grass Fed Beef Burger<br>Grilled Chicken Breast<br>Jerk Chicken Thigh<br>Roasted Onions & Peppers<br>Sauteed Broccoli<br>Sweet Potato Fries
             </div>
@@ -185,7 +187,7 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <!--span7-->
-          <h1 style="text-align: center">Latino 2 WOR</h1><hr>
+          <h1 class="menu-name" style="text-align: center">Latino 2 WOR</h1><hr>
           <img src="image/worLatina.jpg" class="modalImage"><hr>
           <div id="wor-menu-latino">Flour Tortilla<br>Black Beans<br>Chicken Fajitas<br>Chili Lime Melon Salad<br>Mexican Quinoa & Black Bean Salad<br>Mexican Toppings<br>Yellow Rice<br>Zucchini & Corn
             </div>
@@ -206,7 +208,7 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <!--span8-->
-          <h1 style="text-align: center">Mediterranean</h1><hr>
+          <h1 class="menu-name" style="text-align: center">Mediterranean</h1><hr>
           <img src="image/worMedi.jpg" class="modalImage"><hr>
           <div id="wor-menu-medi">Braised Pork w/White Beans & Tomatoes<br>Fettuccini Pasta<br>Marinara Sauce<br>Mushroom Cream Sauce<br>Rstd Cauliflower, Salsa Verde & Olives<br>Tortellini w/Basil Pesto & Grape Tomatoes<br>Whole Grain Penne
             </div>
@@ -227,7 +229,7 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <!--span8-->
-          <h1 style="text-align: center">Soup</h1><hr>
+          <h1 class="menu-name" style="text-align: center">Soup</h1><hr>
           <img src="image/worSoup.jpg" class="modalImage"><hr>
           <div id="wor-menu-soup">Chicken Noodle Soup<br>Tomato Bisque Soup
             </div>

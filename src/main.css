@@ -306,3 +306,9 @@ body {
   width: 75%;
 }
 
+/*Search Function*/
+.search-dropdown{
+  position: relative;
+  display: inline-block;
+} 
+

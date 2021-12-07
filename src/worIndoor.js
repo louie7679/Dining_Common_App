@@ -259,39 +259,43 @@ window.onclick = function(event) {
     //    modalworfilter.style.display = "none";
     //}
   }
-
+document.getElementById("SearchButton").addEventListener("click", ()=>{
+    document.getElementById("fi-wor-seasons").src = "image/Highlight.png";
+} );
 //search functionality
 var search = document.getElementById("search-span");
 var searchField = document.getElementById("search-text");
-addSearchOptions();
+// addSearchOptions();
+//
+// function addSearchOptions(){
+//   var stations = document.getElementsByClassName("menu-name");
+//   for (const e of stations) {
+//     let option = document.createElement("a");
+//     option.innerText = e.innerText;
+//     option.style.display = "none";
+//     search.appendChild(option);
+//   }
+// }
+//
+//
+// search.addEventListener("keyup", () => {
+//   let options = search.children;
+//   for (const op of options) {
+//     if(op.id === "search-text" || op.tagName === "BUTTON"){
+//       continue;
+//     }
+//
+//     let searchText = searchField.value.toLowerCase();
+//     let optionText = op.innerText.toLowerCase();
+//     if(!optionText.includes(searchText)){
+//       op.style.display = "none";
+//     }
+//     else{
+//       op.style.display = "";
+//     }
+//   }
+// });
 
-function addSearchOptions(){
-  var stations = document.getElementsByClassName("menu-name");
-  for (const e of stations) {
-    let option = document.createElement("a");
-    option.innerText = e.innerText;
-    option.style.display = "none";
-    search.appendChild(option);
-  }
-}
-
-search.addEventListener("keyup", () => {
-  let options = search.children;
-  for (const op of options) {
-    if(op.id === "search-text" || op.tagName === "BUTTON"){
-      continue;
-    }
-
-    let searchText = searchField.value.toLowerCase();
-    let optionText = op.innerText.toLowerCase();
-    if(!optionText.includes(searchText)){
-      op.style.display = "none";
-    }
-    else{
-      op.style.display = "";
-    }
-  }
-});
 
 //filtering
 function applyFilter(filter){

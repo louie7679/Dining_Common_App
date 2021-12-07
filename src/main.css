@@ -310,5 +310,13 @@ body {
 .search-dropdown{
   position: relative;
   display: inline-block;
-} 
+}
+.search-dropdown-items {
+  position: absolute;
+  z-index: 99;
+
+  top: 100%;
+  left: 0;
+  right: 0;
+}
 

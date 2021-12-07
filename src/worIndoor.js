@@ -259,7 +259,9 @@ window.onclick = function(event) {
     //    modalworfilter.style.display = "none";
     //}
   }
-
+document.getElementById("SearchButton").addEventListener("click", ()=>{
+    document.getElementById("fi-wor-seasons").src = "image/Highlight.png";
+} );
 //search functionality
 var search = document.getElementById("search-span");
 var searchField = document.getElementById("search-text");

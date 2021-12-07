@@ -166,7 +166,7 @@ var worfilter = document.getElementById("wor-filter");
 worfilter.onclick = function() {
     modalworfilter.style.display = "block";
  }
-  document.getElementById("filterapply").onclick = function() {
+ document.getElementById("filterapply").addEventListener('click', function() {
     modalworfilter.style.display = "none";
     if (document.getElementById("wor-date").value === "1" && document.getElementById("wor-meal").value === "lunch"){
       document.getElementById("wor-menu-soup").innerHTML = "Chicken Noodle Soup<br>Tomato Bisque Soup";
@@ -178,7 +178,7 @@ worfilter.onclick = function() {
       document.getElementById("wor-menu-tandoor").innerHTML = "Creamy Cucumber Salad<br>Green Tahini Sauce<br>Harissa Braised Zucchini<br>Hummus<br>Lavash Bread<br>Lemon Rice Pilaf<br>Mid East Tomato Salad<br>Moroccan Kefta Brochette (Beef)<br>Sweet Onion Salad";
       document.getElementById("wor-menu-medi").innerHTML = "Braised Pork w/White Beans & Tomatoes<br>Fettuccini Pasta<br>Marinara Sauce<br>Mushroom Cream Sauce<br>Rstd Cauliflower, Salsa Verde & Olives<br>Tortellini w/Basil Pesto & Grape Tomatoes<br>Whole Grain Penne";
       document.getElementById("wor-menu-seasons").innerHTML = "Bean Sprouts<br>Cucumbers, Cubed<br>Miso Glazed Sweet Potato w/Sesame<br>Pumpkin Seeds/Pepitas<br>Scallions<br>Sesame Chili Vinaigrette<br>Sesame Seeds<br>Spicy Miso Eggplant Broccoli Salad<br>Spinach & Garlic<br>Spring Mix<br>Tofu Teriyaki<br>Vegetable Fried Rice";
-      document.getElementById("wor-menu-latino").innerHTML = "Flour Tortilla<br>Black Beans<br>Chicken Fajitas<br>Chili Lime Melon Salad<br>Mexican Quinoa & Black Bean Salad<br>Mexican Toppings<br>Yellow Rice<br>Zucchini & Corn";
+            
       // if (document.getElementById(vegeCheck).checked = true) {
       //   document.getElementById("wor-menu-soup").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
       //   document.getElementById("wor-menu-grill").innerHTML = "Chana Masala Cauliflower Soup<br>Mexican Style Meatball Soup (Pork)";
@@ -252,7 +252,7 @@ worfilter.onclick = function() {
       document.getElementById("wor-menu-seasons").innerHTML = "1l";
       document.getElementById("wor-menu-latino").innerHTML = "1l";
     }
-  }
+  });
 window.onclick = function(event) {
     //this causes errors, modal is not defined...
     //if (event.target == modal) {
@@ -292,5 +292,56 @@ search.addEventListener("keyup", () => {
     }
   }
 });
+
+//filtering
+function applyFilter(filter){
+  let toFilter = document.getElementsByClassName("menu-item");
+  for (const item of toFilter) {
+    if(!item.classList.contains(filter)) {
+      item.classList.add("hidden");
+      item.innerText = "";
+    }
+  }
+}
+
+function clearFilters() {
+  resetLatinaMenu();
+}
+
+function resetLatinaMenu() {
+  const date = document.getElementById("wor-date").value;
+  const meal = document.getElementById("wor-meal").value;
+  if(date === "1" && meal === "lunch"){
+    document.getElementById("wor-menu-latino").innerHTML = '<div class="menu-item lunch vegetarian sustainable whole-grain halal antibiotic-free plant-based">Flour Tortilla</div><div class="menu-item lunch vegetarian sustainable whole-grain halal antibiotic-free plant-based">Black Beans</div><div class="menu-item lunch local halal antibiotic-free">Chicken Fajitas</div><div class="menu-item lunch local sustainable halal antibiotic-free">Chili Lime Melon Salad</div><div class="menu-item lunch vegetarian local sustainable whole-grain halal antibiotic-free plant-based">Mexican Quinoa & Black Bean Salad</div><div class="menu-item lunch vegetarian local sustainable halal antibiotic-free">Mexican Toppings</div><div class="menu-item lunch vegetarian halal antibiotic-free plant-based">Yellow Rice</div><div class="menu-item lunch vegetarian halal antibiotic-free plant-based">Zucchini & Corn</div>';
+  }
+  else if (date === '2' && meal === 'lunch'){
+    document.getElementById("wor-menu-latino").innerHTML = '<div class="menu-item vegetarian sustainable halal antibiotic-free plant-based">Corn & Black Bean Salad</div><div class="menu-item vegetarian sustainable halal antibiotic-free plant-based"">Mango & Watermelon Salad</div><div class="menu-item vegetarian local sustainable halal antibiotic-free plant-based">Mexican Tomato Salad</div><div class="menu-item vegetarian local sustainable halal plant-based">Mexican Toppings</div><div class="menu-item vegetarian sustainable halal antibiotic-free plant-based">Pinto Beans</div><div class="menu-item local sustainable halal antibiotic-free">Pork Pupusas Con Curtido</div><div class="menu-item antibiotic-free">Salvadoran Salsa Roja (Chicken)</div><div class="menu-item vegetarian local halal antibiotic-free plant-based">Yellow Rice</div>'
+  }
+}
+
+const applyButton = document.getElementById("filterapply");
+applyButton.addEventListener('click', applyFilters)
+function applyFilters() {
+
+  const idFilter = [
+    {id:"vegeCheck", filter:"vegetarian"},
+    {id:"localCheck", filter:"local"},
+    {id:"susCheck", filter:"sustainable"},
+    {id:"wgCheck", filter:"whole-grain"},
+    {id:"halalCheck", filter:"halal"},
+    {id:"abCheck",filter:"antibiotic-free"},
+    {id:"plantCheck",filter:"plant-based"}
+  ];
+  
+  //undo any active filters
+  clearFilters();
+  idFilter.forEach((e) => {
+    const check = document.getElementById(e.id);
+    if(check.checked){
+      applyFilter(e.filter);
+    }
+  })  
+}
+
 
 

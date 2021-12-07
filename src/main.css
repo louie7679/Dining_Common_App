@@ -312,3 +312,7 @@ body {
   display: inline-block;
 } 
 
+/*filter*/
+.hidden{
+  display: none !important;
+}
